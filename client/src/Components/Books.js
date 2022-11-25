@@ -28,8 +28,8 @@ const Books=()=>{
     return (
         <>
             <SearchBar books={books} setSearchResults={setSearchResults} />
-            {/* <button onClick={toggleModal}>Show wish list</button>
-            {modal ? <BooksList books={wishList} wishList={wishList} setWishList={setWishList}/> : null} */}
+            <button onClick={toggleModal}>{modal ? 'Close wish list' : 'open wish list'}</button>
+            {modal ? <BooksList books={wishList} wishList={wishList} setWishList={setWishList}/> : null}
             <BooksList books={books} wishList={wishList} setWishList={setWishList}/>
         </>
     )

@@ -28,7 +28,8 @@ const Card = ({ card, wishList, setWishList }) => {
                     <h2>{card.volumeInfo.title}</h2>
                 </button>
                 {modal ? <BookDeatails card={card}/> : null}
-                <button style={{display: 'block'}} onClick={editWishList(card)}> add to wish list </button>
+                {console.log(card)}
+                <button style={{display: 'block'}} onClick={() => editWishList(card)}> add to wish list </button>
             </article>
     )
 }
